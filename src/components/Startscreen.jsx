@@ -18,7 +18,10 @@ function Startscreen (){
 
             {isPressed && 
                 <div>
-                    <Gamescreen/>
+                    <Gamescreen
+                        isPressed = {isPressed}
+                        setIsPressed = {setIsPressed}
+                    />
                 </div>
             }
         </div>
