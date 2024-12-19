@@ -1,5 +1,4 @@
 import React, { useState} from "react";
-/*import Round from "./Gamecomponent.jsx";*/
 import Round from "./Roundbox.jsx";
 import Results from "./Resultsscreen.jsx";
 import Navbar from "./GamescreenElements/Navbar.jsx"
@@ -10,7 +9,7 @@ function Gamescreen (){
     const [rounds, setRounds] = useState(1);
     const [showFlag, setShowFlag] = useState(true);
 
-    const handleShowFlag = () => {
+    const handleShowFlag = () => { 
         setShowFlag(true);
     };
 
