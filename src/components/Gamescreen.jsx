@@ -1,6 +1,6 @@
 import React, { useState} from "react";
-import Round from "./Roundbox.jsx";
-import Results from "./Resultsscreen.jsx";
+import Round from "./GamescreenElements/Roundbox.jsx";
+import Results from "./GamescreenElements/Resultsscreen.jsx";
 import Navbar from "./GamescreenElements/Navbar.jsx";
 import "./Gamescreen.css";
 

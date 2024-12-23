@@ -1,13 +1,7 @@
 import React from "react";
-import "./Gamescreen.css";
+import "./Resultsscreen.css";
 
 function Resultsscreen ({rounds, setRounds, showFlag, setShowFlag}){
-
-    /*
-    const increaseRound = () => {
-        setRounds((prevRounds) => prevRounds + 1);
-    };
-    */
 
     const handleHideFlag = () => {
         setRounds((prevRounds) => prevRounds + 1);
