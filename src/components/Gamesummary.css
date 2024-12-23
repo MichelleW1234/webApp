@@ -1,28 +1,36 @@
-.gameScreen{
+.GameSummary{
 
     padding: 10px;
-    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
 
 }
 
-.gameResultsButton{
+.stats{
 
-    font-size: 25px;
+    background-color: rgb(0, 255, 225);
+    width: 300px;
+    padding: 10px;
+
+}
+
+.restartButton{
+
     padding: 5px;
+    font-size: 20px;
     border-radius: 8px;
     background-color: pink;
-    
+
 }
 
-.gameResultsButton:hover{
+.restartButton:hover {
 
-    font-size: 25px;
     padding: 5px;
+    font-size: 20px;
     border-radius: 8px;
     background-color: rgb(255, 0, 43);
     color: white;
-    
+
 }
