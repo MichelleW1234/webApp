@@ -5,25 +5,24 @@ function Gamesummary (){
 
     const location = useLocation();
     const searchParams = new URLSearchParams(location.search);
-    const computerWins = searchParams.get("computerWins");
-    const userWins = searchParams.get("userWins");
+    const computerWins = parseInt(searchParams.get("computerWins"), 10);
+    const userWins = parseInt(searchParams.get("userWins"), 10);
 
     let winner;
 
-    if ({computerWins} > {userWins}) {
+    if (computerWins > userWins) {
 
-        winner = "You lost.";
+      winner = "You lost.";
 
-      } else if ({computerWins} < {userWins}) {
+    } else if (computerWins < userWins) {
 
-        winner = "You won!";
+      winner = "You won!";
 
-      } else {
+    } else {
 
-        winner = "You tied. No one wins!";
+      winner = "You tied. No one wins!";
 
-      }
-      
+    }
 
     return (
         <div className="GameSummary">
