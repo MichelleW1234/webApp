@@ -8,8 +8,8 @@ function Startscreen (){
             <h1>
                 Hello. You are about to start. Are you ready?
             </h1>
-            <a href="/game">
-                <button className = "button"> Start Game</button>
+            <a href="/instructions">
+                <button className = "startButton"> Start Game</button>
             </a>
         </div>
     );

@@ -11,7 +11,7 @@ function Resultsscreen ({rounds, setRounds, showFlag, setShowFlag}){
     return (
         <div className = "floatingFlag">
 
-
+            
 
 
             <button onClick={handleHideFlag}>Close</button>
