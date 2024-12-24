@@ -7,21 +7,20 @@ import NoPage from "./components/NoPage.jsx";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
-      <div>
-          <BrowserRouter>
-            <Routes>
-              <Route index element={<Startscreen />}/>
-              <Route path="/start" element={<Startscreen />}/>
-              <Route path="/game" element={<Gamescreen />}/>
-              <Route path="/instructions" element={<Instructionsscreen />}/>
-              <Route path="/summary" element={<Summaryscreen />}/>
 
-              {/*Page doesn't exist error*/}
-              <Route path="*" element={<NoPage />} />
-            </Routes>
-          </BrowserRouter>
-      </div>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Startscreen />}/>
+        <Route path="/start" element={<Startscreen />}/>
+        <Route path="/game" element={<Gamescreen />}/>
+        <Route path="/instructions" element={<Instructionsscreen />}/>
+        <Route path="/summary" element={<Summaryscreen />}/>
+
+        {/*Page doesn't exist error*/}
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
