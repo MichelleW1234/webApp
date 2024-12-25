@@ -43,8 +43,9 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
     };
 
     return (
+
         <div className="gameScreenContainer">
-            <h2>Round: {round}</h2>
+            <h1>Round: {round}</h1>
 
             <p className = "directions">
                 Enter one of the following in the space below: <br/>
@@ -53,7 +54,8 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
                 - Enter 3 for scissors <br/>
             </p>
 
-            <input
+            <input 
+                className = "textbox"
                 type="text"
                 value={inputValue}
                 onChange={handleChange}

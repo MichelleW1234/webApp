@@ -1,0 +1,14 @@
+body {
+
+    background: rgb(226, 76, 249); /* Sets a solid background color */
+    
+}
+
+*{
+
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}

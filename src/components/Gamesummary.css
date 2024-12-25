@@ -1,5 +1,6 @@
 .GameSummary{
 
+    margin-top: 100px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -10,27 +11,42 @@
 
 .stats{
 
-    background-color: rgb(0, 255, 225);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 247, 255);
     width: 300px;
     padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    gap: 10px;
+    height: 100px;
+
+}
+
+.words {
+
+    font-size: 23px;
 
 }
 
 .restartButton{
 
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
-    border-radius: 8px;
-    background-color: pink;
+    border-radius: 0px;
+    background-color: rgb(0, 170, 255);
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
 
 }
 
 .restartButton:hover {
 
-    padding: 5px;
-    font-size: 20px;
-    border-radius: 8px;
-    background-color: rgb(255, 0, 43);
+    background-color: rgb(0, 51, 255);
     color: white;
 
 }

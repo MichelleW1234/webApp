@@ -28,11 +28,11 @@ function Gamesummary (){
         <div className="GameSummary">
             <h1>Game Summary:  </h1>
             <div className = "stats">
-                <h2>Computer Wins: {computerWins} </h2>
-                <h2>User Wins: {userWins} </h2>
+                <p className = "words"> Computer Wins: {computerWins} </p>
+                <p className = "words"> User Wins: {userWins} </p>
             </div>
 
-            <h2>{winner}</h2>
+            <h1 >{winner}</h1>
             <a href="/start">
                 <button className = "restartButton"> Restart </button>
             </a>

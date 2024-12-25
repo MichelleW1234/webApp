@@ -48,7 +48,7 @@ function Gamescreen (){
 
                 <div className="gameOver">
 
-                    <h2> Game Over! </h2>
+                    <h1> Game Over! </h1>
 
                     <a href={`/summary?computerWins=${computerWins}&userWins=${userWins}`}>
                         <button className="gameResultsButton"> View Game Summary </button>
