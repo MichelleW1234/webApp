@@ -29,26 +29,24 @@ function Gamescreen (){
                         setUserWins = {setUserWins}
                         result = {result}
                         setResult = {setResult}
+
                     />
 
                     {showFlag && (
-                        <div>
 
-                            <Results
-                                result = {result}
-                                rounds={rounds}
-                                setRounds={setRounds}
-                                showFlag={showFlag}
-                                setShowFlag={setShowFlag}
-                            />
-
-                        </div>
+                        <Results
+                            result = {result}
+                            rounds={rounds}
+                            setRounds={setRounds}
+                            showFlag={showFlag}
+                            setShowFlag={setShowFlag}
+                        />
                     )}
                 </div>
 
             ) : (
 
-                <div className="gameScreen">
+                <div className="gameOver">
 
                     <h2> Game Over! </h2>
 

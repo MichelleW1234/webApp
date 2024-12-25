@@ -12,8 +12,21 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
         if (inputValue == 1 || inputValue == 2 || inputValue == 3) {
 
             setError("");
+
+            const winner = decideRoundWinner(Number(inputValue), result, setResult);
+
+            if (winner == 1){
+
+                setUserWins((prevUserWins) => prevUserWins + 1);
+
+            } else if (winner == 0){
+
+                setComputerWins((prevComputerWins) => prevComputerWins + 1);
+
+            }
+
             setShowFlag(true);
-            setResult(decideRoundWinner(Number(inputValue), computerWins, setComputerWins, userWins, setUserWins));
+            setInputValue("");
 
         } else {
 
