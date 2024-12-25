@@ -14,7 +14,7 @@ function Resultsscreen ({result, rounds, setRounds, showFlag, setShowFlag}){
             <div className = "result"> 
                 
                 {result.map((line, index) => (
-                    <h1 key={index}>{line}</h1>
+                    <p className = "words" key={index}>{line}</p>
                 ))}
 
                 <button className = "floatingButton" onClick={handleHideFlag}>Close</button>

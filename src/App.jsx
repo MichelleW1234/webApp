@@ -5,6 +5,7 @@ import Instructionsscreen from "./components/Instructionsscreen.jsx";
 import Summaryscreen from "./components/Gamesummary.jsx";
 import NoPage from "./components/NoPage.jsx";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "./App.css";
 
 function App() {
 
