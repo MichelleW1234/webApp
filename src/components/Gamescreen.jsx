@@ -29,6 +29,7 @@ function Gamescreen (){
                         setUserWins = {setUserWins}
                         result = {result}
                         setResult = {setResult}
+
                     />
 
                     {showFlag && (
@@ -45,7 +46,7 @@ function Gamescreen (){
 
             ) : (
 
-                <div className="gameScreen">
+                <div className="gameOver">
 
                     <h2> Game Over! </h2>
 

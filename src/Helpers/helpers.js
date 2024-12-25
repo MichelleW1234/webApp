@@ -4,9 +4,8 @@ const computerGeneratedResponse = () => {
 
 }
 
-export const decideRoundWinner = (userMove, computerWins, setComputerWins, userWins, setUserWins) => {
+export const decideRoundWinner = (userMove, result, setResult) => {
 
-    let responses = "";
     const userResponse = userMove;
     const computerResponse = computerGeneratedResponse();
 
@@ -14,51 +13,57 @@ export const decideRoundWinner = (userMove, computerWins, setComputerWins, userW
 
         if (userResponse === 1){
 
-            responses = "your response: rock , computer's response: rock , It's a tie!";
+            setResult(["Your response: rock", "Computer's response: rock", "It's a tie!"]);
 
         } else if (userResponse === 2){
 
-            responses = "your response: paper , computer's response: paper , It's a tie!";
+            setResult(["Your response: paper", "Computer's response: paper" , "It's a tie!"]);
 
         } else {
 
-            responses = "your response: scissors , computer's response: scissors , It's a tie!";
+            setResult(["Your response: scissors" , "Computer's response: scissors" , "It's a tie!"]); 
 
         }
 
     } else if (computerResponse === 1 && userResponse === 2){
 
-        responses = "your response: paper , computer's response: rock , You get a point!";
-        setUserWins((prevUserWins) => prevUserWins + 1);
+        setResult(["Your response: paper" , "Computer's response: rock" , "You get a point!"]);
+
+        return 1;
 
     } else if (computerResponse === 1 && userResponse === 3){
 
-        responses = "your response: scissors , computer's response: rock , The computer gets a point!";
-        setComputerWins((prevComputerWins) => prevComputerWins + 1);
+        setResult(["Your response: scissors" , "Computer's response: rock" , "The Computer gets a point!"]);
+
+        return 0;
 
     } else if (computerResponse === 2 && userResponse === 1){
 
-        responses = "your response: rock , computer's response: paper , The computer gets a point!";
-        setComputerWins((prevComputerWins) => prevComputerWins + 1);
+        setResult(["Your response: rock" , "Computer's response: paper" , "The Computer gets a point!"]);
+
+        return 0;
 
     } else if (computerResponse === 2 && userResponse === 3){
 
-        responses = "your response: scissors , computer's response: paper , You get a point!";
-        setUserWins((prevUserWins) => prevUserWins + 1);
+        setResult(["Your response: scissors" , "Computer's response: paper" , "You get a point!"]);
+
+        return 1;
 
     } else if (computerResponse === 3 && userResponse === 1){
 
-        responses = "your response: rock , computer's response: scissors , You get a point!";
-        setUserWins((prevUserWins) => prevUserWins + 1);
+        setResult(["Your response: rock" , "Computer's response: scissors" , "You get a point!"]);
+
+        return 1;
 
     } else {
 
-        responses = "your response: paper , computer's response: scissors , The computer gets a point!";
-        setComputerWins((prevComputerWins) => prevComputerWins + 1);
+        setResult(["Your response: paper" , "Computer's response: scissors" , "The Computer gets a point!"]);
+
+        return 0;
 
     }
 
-    return responses;
+    return -1;
 
 }
 
