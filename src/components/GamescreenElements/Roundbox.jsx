@@ -49,9 +49,9 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
 
             <p className = "directions">
                 Enter one of the following in the space below: <br/>
-                - Enter 1 for rock <br/>
-                - Enter 2 for paper <br/>
-                - Enter 3 for scissors <br/>
+                &gt; Enter 1 for rock <br/>
+                &gt; Enter 2 for paper <br/>
+                &gt; Enter 3 for scissors <br/>
             </p>
 
             <input 
