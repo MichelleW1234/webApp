@@ -32,17 +32,14 @@ function Gamescreen (){
                     />
 
                     {showFlag && (
-                        <div>
 
-                            <Results
-                                result = {result}
-                                rounds={rounds}
-                                setRounds={setRounds}
-                                showFlag={showFlag}
-                                setShowFlag={setShowFlag}
-                            />
-
-                        </div>
+                        <Results
+                            result = {result}
+                            rounds={rounds}
+                            setRounds={setRounds}
+                            showFlag={showFlag}
+                            setShowFlag={setShowFlag}
+                        />
                     )}
                 </div>
 

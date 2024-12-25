@@ -12,8 +12,9 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
         if (inputValue == 1 || inputValue == 2 || inputValue == 3) {
 
             setError("");
-            setShowFlag(true);
             setResult(decideRoundWinner(Number(inputValue), computerWins, setComputerWins, userWins, setUserWins));
+            setShowFlag(true);
+            setInputValue("");
 
         } else {
 
