@@ -11,6 +11,12 @@ function Navbar (){
                             <button className = "navBarButton" > Exit Game </button>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="/levels">
+                            <button className = "navBarButton" > Exit Level </button>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

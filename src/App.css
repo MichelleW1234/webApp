@@ -7,14 +7,14 @@ body {
 
 *{
 
-    font-family: monospace;
-    text-shadow: 2px 2px 4px #fcb8f4, -2px -2px 4px #95b1ff;
-    position: relative;
-   
+  font-family: monospace;
+  text-shadow: 2px 2px 4px #fcb8f4, -2px -2px 4px #95b1ff;
+  position: relative;
+  
 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .words {
@@ -54,6 +54,19 @@ button{
     }
     56%, 100% {
       transform: translate(0, 0);
+      text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
+    }
+  }
+
+
+  @keyframes glitch {
+    0% {
+      text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
+    }
+    50% {
+      text-shadow: 4px -4px 4px #ff46a2, -4px 4px 4px #4d53fe;
+    }
+    100% {
       text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
     }
   }
