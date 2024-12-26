@@ -4,13 +4,17 @@ body {
     
 }
 
+
 *{
 
     font-family: monospace;
+    text-shadow: 2px 2px 4px #fcb8f4, -2px -2px 4px #95b1ff;
+    position: relative;
+   
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .words {
@@ -18,3 +22,40 @@ body {
     font-size: 23px;
 
 }
+
+button{
+
+    font-weight: bold;
+    border-radius: 0px;
+    border-radius: 0px;
+
+}
+
+@keyframes glitch-move {
+    0%, 44% {
+      transform: translate(0, 0);
+      text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
+    }
+    45%, 46% {
+      transform: translate(-5px, -2px);
+      text-shadow: 4px -4px 4px #c800ff, -4px 4px 4px #007bff;
+    }
+    47%, 49% {
+      transform: translate(4px, 3px);
+      text-shadow: -4px 2px 4px #ff8400, 4px -2px 4px #00ff7f;
+    }
+    50%, 52% {
+      transform: translate(-3px, 5px);
+      text-shadow: 5px -5px 4px #fd2828, -5px 5px 4px #5661fc;
+    }
+    52%, 55% {
+        transform: translate(4px, 3px);
+        text-shadow: 5px -5px 4px #ff69b4, -5px 5px 4px #00ffff;
+    }
+    56%, 100% {
+      transform: translate(0, 0);
+      text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
+    }
+  }
+
+

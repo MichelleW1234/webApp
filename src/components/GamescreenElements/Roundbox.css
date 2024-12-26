@@ -6,7 +6,6 @@
     align-items: center;
     padding: 15px;
     background-color: rgb(152, 156, 249);
-    border-radius: 8px;
     width: 600px;
     height: 500px;
     border-radius: 25px;
@@ -39,12 +38,9 @@
 
     font-size: 25px;
     padding: 10px;
-    background-color: rgb(250, 128, 238);
-    border-radius: 8px;
-    border-left: 4px solid black;
-    border-bottom: 4px solid black;
-    border-radius: 0px;
-    font-weight: bold;
+    background-color: rgb(255, 104, 240);
+    border-left: 5px solid black;
+    border-bottom: 5px solid black;
     
 }
 

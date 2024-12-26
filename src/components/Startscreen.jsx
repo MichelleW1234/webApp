@@ -5,7 +5,7 @@ function Startscreen (){
 
     return (
         <div className = "startScreen">
-            <h1>
+            <h1 className = "intro">
                 Hello. You are about to start. Are you ready?
             </h1>
             <a href="/instructions">

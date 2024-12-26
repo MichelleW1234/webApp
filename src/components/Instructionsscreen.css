@@ -16,14 +16,14 @@
 
 .continueButton {
     
-    background-color: rgb(0, 255, 221);
+    background-color:rgb(0, 242, 255);
     padding: 10px;
     font-size: 25px;
-    border-radius: 8px;
-    border-left: 5px solid black;
-    border-bottom: 5px solid black;
-    border-radius: 0px;
-    font-weight: bold;
+    border-left: 5.5px solid black;
+    border-bottom: 5.5px solid black;
+    
+    animation: glitch-move 4s infinite;
+    animation-delay: 0s;
 
 }
 
