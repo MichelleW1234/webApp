@@ -4,22 +4,22 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 const LevelContext = createContext();
 
 // Create a provider component
-export function RoundsProvider({ children }) {
+export function LevelProvider({ children }) {
 
   // Retrieve rounds from localStorage or default to 1 if not available
-  const storedLevel = localStorage.getItem('level');
+  const storedLevel = localStorage.getItem('level') ? JSON.parse(localStorage.getItem('level')) : 1;
 
-  const [level, setLevel] = useState();
+  const [level, setLevel] = useState(storedLevel);
 
   // Save rounds to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('level', level);
-  }, [rounds]);
+  }, [level]);
 
   return (
-    <RoundsContext.Provider value={{level, setLevel}}>
+    <LevelContext.Provider value={{level, setLevel}}>
       {children}
-    </RoundsContext.Provider>
+    </LevelContext.Provider>
   );
 }
 

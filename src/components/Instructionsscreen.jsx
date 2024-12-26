@@ -15,8 +15,8 @@ function Instructionsscreen (){
             <p className="paragraph">
                 Good luck!
             </p>
-            <a href = "/game">
-                <button className = "continueButton"> Continue to Game </button>
+            <a href = "/levels">
+                <button className = "continueButton"> Choose Level </button>
             </a>
         </div>
     );
