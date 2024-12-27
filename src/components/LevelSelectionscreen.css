@@ -21,8 +21,10 @@
     background-color: rgb(98, 0, 255);
     border-right: 3px solid black;
     border-top: 3px solid black;
-    border-left: 8px solid black;
-    border-bottom: 8px solid black;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+
+    border-radius: 20px;
 
 }
 
@@ -33,9 +35,6 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
-
-    animation: glitch 4s infinite;
-    animation-delay: 0s;
 
 }
 
@@ -50,13 +49,13 @@
     width: 200px;
     height: 200px;
     padding: 10px;
-    border-left: 5px solid black;
-    border-bottom: 5px solid black;
+    border-left: 7px solid black;
+    border-bottom: 7px solid black;
     border-right: 2px solid black;
     border-top: 2px solid black;
     overflow-y: auto;
 
-    animation: glitch 4s infinite;
+    animation: glowing-shadow 4s infinite;
     animation-delay: 0s;
 
 }
@@ -67,8 +66,10 @@
     background-color: rgb(0, 217, 255);
     font-size: 20px;
     padding: 10px;
-    border-left: 5px solid black;
-    border-bottom: 5px solid black;
+    border-left: 6px solid black;
+    border-bottom: 6px solid black;
+
+    animation: glowing-shadow 4s infinite;
 
 }
 

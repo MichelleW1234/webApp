@@ -1,9 +1,8 @@
 body {
 
-    background: rgb(226, 76, 249); /* Sets a solid background color */
+    background: rgb(233, 95, 254); /* Sets a solid background color */
     
 }
-
 
 *{
 
@@ -19,15 +18,15 @@ body {
 
 .words {
 
-    font-size: 23px;
+  font-size: 23px;
 
 }
 
 button{
 
-    font-weight: bold;
-    border-radius: 0px;
-    border-radius: 0px;
+  font-weight: bold;
+  border-radius: 0px;
+  border-radius: 0px;
 
 }
 
@@ -64,10 +63,22 @@ button{
       text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
     }
     50% {
-      text-shadow: 4px -4px 4px #ff46a2, -4px 4px 4px #4d53fe;
+      text-shadow: 4px -4px 4px #ff69b4, -4px 4px 4px #00ffff;
     }
     100% {
       text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
+    }
+  }
+
+  @keyframes glowing-shadow {
+    0% {
+      box-shadow: 0 0 20px rgb(255, 0, 255);
+    }
+    50% {
+      box-shadow: 0 0 45px rgb(0, 242, 255);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
     }
   }
 

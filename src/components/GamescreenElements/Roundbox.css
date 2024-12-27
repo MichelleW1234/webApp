@@ -16,6 +16,22 @@
     border-top: 2px solid black;
     border-right: 2px solid black;
 
+    animation: glowing-shadow 4s infinite;
+
+}
+
+.RoundNumber{
+
+    animation: glitch 4s infinite;
+    animation-delay: 0s;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.591);
+    border-radius: 8px;
+    border-color: black;
+    border: 3px solid rgba(0, 0, 0, 0.261);
+
+    animation: glowing-shadow 4s infinite, glitch 4s infinite;
+
 }
 
 .directions {
@@ -32,6 +48,8 @@
     border-left: 4px solid black;
     border-bottom: 4px solid black;
 
+    animation: glowing-shadow 4s infinite;
+
 }
 
 .enterButton {
@@ -41,6 +59,8 @@
     background-color: rgb(255, 104, 240);
     border-left: 5px solid black;
     border-bottom: 5px solid black;
+
+    animation: glowing-shadow 4s infinite;
     
 }
 

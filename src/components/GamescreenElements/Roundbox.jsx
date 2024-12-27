@@ -1,19 +1,29 @@
 import React, { useState } from 'react';
-import { decideRoundWinner } from "../../Helpers/helpers.js";
+import { decideRoundWinnerLevel1, decideRoundWinnerLevel2, decideRoundWinnerLevel3 } from "../../Helpers/helpers.js";
+import { useInput } from '../../InputProvider.jsx';
+import { useLevel } from '../../LevelProvider.jsx'; 
 import "./Roundbox.css";
 
+function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins, userWins, setUserWins, result, 
+    setResult, terminationFlag, setTerminationFlag}){
 
-function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins, userWins, setUserWins, result, setResult}){
+    const {input} = useInput();
+    const currInput = input;
+    const {level} = useLevel();
+    const currLevel = level;
 
     const [error, setError] = useState("");
 
-    const checkingInputValidity = () => {
+    const functions = {decideRoundWinnerLevel1, decideRoundWinnerLevel2, decideRoundWinnerLevel3};
 
-        if (inputValue == 1 || inputValue == 2 || inputValue == 3) {
+    const ProcessingInput = () => {
 
-            setError("");
+        if (1 <= inputValue && inputValue <= currInput.length) {
 
-            const winner = decideRoundWinner(Number(inputValue), result, setResult);
+            setError(""); 
+
+            const functionName = `decideRoundWinnerLevel${currLevel}`;
+            const winner = functions[functionName](Number(inputValue), result, setResult);
 
             if (winner == 1){
 
@@ -23,6 +33,18 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
 
                 setComputerWins((prevComputerWins) => prevComputerWins + 1);
 
+            } else if (winner == 3){
+
+                setUserWins(10);
+                setComputerWins(0);
+                setTerminationFlag(true);
+                
+            } else if (winner == -3){
+
+                setComputerWins(10);
+                setUserWins(0);
+                setTerminationFlag(true);
+
             }
 
             setShowFlag(true);
@@ -30,7 +52,7 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
 
         } else {
 
-            setError("Please enter either 1, 2, or 3.");
+            setError("Please enter a number between 1 and " + currInput.length);
 
         }
 
@@ -45,14 +67,14 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
     return (
 
         <div className="gameScreenContainer">
-            <h1>Round: {round}</h1>
+            <h1 className = "RoundNumber">Round: {round}</h1>
 
-            <p className = "directions">
-                Enter one of the following in the space below: <br/>
-                &gt; Enter 1 for rock <br/>
-                &gt; Enter 2 for paper <br/>
-                &gt; Enter 3 for scissors <br/>
-            </p>
+            <div className = "directions">
+                <p>Enter one of the following in the space below: </p>
+                {currInput.map((item, index) => (
+                    <p key={index}> &gt; Enter {index+1} for {item} </p>
+                ))}
+            </div>
 
             <input 
                 className = "textbox"
@@ -62,7 +84,7 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
                 placeholder="Type here..."
             />
 
-            <button className = "enterButton" onClick={checkingInputValidity}>Enter </button>
+            <button className = "enterButton" onClick={ProcessingInput}>Enter </button>
             {error && <p style={{ color: 'red' }}>{error}</p>}
 
         </div>

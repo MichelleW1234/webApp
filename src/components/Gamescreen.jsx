@@ -11,6 +11,7 @@ function Gamescreen (){
     const [computerWins, setComputerWins] = useState(0);
     const [userWins, setUserWins] = useState(0);
     const [result, setResult] = useState();
+    const [terminationFlag, setTerminationFlag] = useState(false);
 
     return (
         <div>
@@ -29,7 +30,8 @@ function Gamescreen (){
                         setUserWins = {setUserWins}
                         result = {result}
                         setResult = {setResult}
-
+                        terminationFlag = {terminationFlag}
+                        setTerminationFlag = {setTerminationFlag}
                     />
 
                     {showFlag && (
@@ -40,6 +42,7 @@ function Gamescreen (){
                             setRounds={setRounds}
                             showFlag={showFlag}
                             setShowFlag={setShowFlag}
+                            terminationFlag = {terminationFlag}
                         />
                     )}
                 </div>

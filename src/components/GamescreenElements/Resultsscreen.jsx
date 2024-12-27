@@ -1,11 +1,22 @@
 import React, { useState } from 'react';
 import "./Resultsscreen.css";
 
-function Resultsscreen ({result, rounds, setRounds, showFlag, setShowFlag}){
+function Resultsscreen ({result, rounds, setRounds, showFlag, setShowFlag, terminationFlag}){
 
     const handleHideFlag = () => {
-        setRounds((prevRounds) => prevRounds + 1);
-        setShowFlag(false);
+
+        if (terminationFlag == true){
+
+            setRounds(11);
+            setShowFlag(false);
+
+        } else {
+
+            setRounds((prevRounds) => prevRounds + 1);
+            setShowFlag(false);
+
+        }
+
     }
 
     return (
@@ -17,7 +28,7 @@ function Resultsscreen ({result, rounds, setRounds, showFlag, setShowFlag}){
                     <p className = "words" key={index}>{line}</p>
                 ))}
 
-                <button className = "floatingButton" onClick={handleHideFlag}>Close</button>
+                <button className = "floatingButton" onClick={handleHideFlag}> Close </button>
             </div>
 
         </div>

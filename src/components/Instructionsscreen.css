@@ -22,7 +22,7 @@
     border-left: 5.5px solid black;
     border-bottom: 5.5px solid black;
     
-    animation: glitch-move 4s infinite;
+    animation: glitch-move 4s infinite, glowing-shadow 4s infinite;
     animation-delay: 0s;
 
 }

@@ -1,20 +1,22 @@
 import React, { useState} from "react";
 import { useLevel } from '../LevelProvider.jsx';
+import { useInput } from '../InputProvider.jsx';
+import { getInput } from "../Helpers/helpers.js";
 import "./LevelSelectionscreen.css";
 
 function LevelSelectionscreen (){
 
     const [activeButton, setActiveButton] = useState(1);
-    const [selectedButton, setSelectedButton] = useState(1);
+    const { level, setLevel } = useLevel();
+    const { input, setInput } = useInput();
 
     const handleClick = (index) => {
 
         setActiveButton(index);
-        setSelectedButton(index);
-        console.log(selectedButton);
+        setLevel(index);
+        setInput(getInput(index));
 
     };
-
 
     return (
         <div className = "levelsScreen">
@@ -26,7 +28,6 @@ function LevelSelectionscreen (){
                 <div className = "LevelsWindowContainer">
 
                     <h2 className = "LevelsWindow"> Level 1 </h2>
-
                     <button
                     className={`LevelButton ${activeButton === 1 ? 'active' : ''}`}
                     onClick={() => handleClick(1)}
@@ -51,7 +52,7 @@ function LevelSelectionscreen (){
 
                 <div className = "LevelsWindowContainer">
 
-                    <h2 className = "LevelsWindow"> Level 2 </h2>
+                    <h2 className = "LevelsWindow"> Level 3 </h2>
 
                     <button
                     className={`LevelButton ${activeButton === 3 ? 'active' : ''}`}
@@ -66,7 +67,7 @@ function LevelSelectionscreen (){
             
             {/*onClick, save selected button in LevelProvider*/}
             <a href = "/game">
-                <button className = "continueButton" > Continue to Game </button>
+                <button className = "continueButton"> Continue to Game </button>
             </a>
         </div>
     );
