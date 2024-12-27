@@ -1,8 +1,9 @@
 import { useLevel } from '../../LevelProvider.jsx';
+import { useReference } from '../../ReferenceProvider.jsx';
+import { getReferences } from "../../Helpers/helpers.js";
 import "./Navbar.css";
 
-
-function Navbar (){
+function Navbar ({showReferences, setShowReferences}){
 
     const { level, setLevel } = useLevel();
 
@@ -11,6 +12,12 @@ function Navbar (){
         setLevel(1);
 
     };
+
+    const displayReferences = () => {
+
+        setShowReferences(prevState => !prevState);
+
+    }
 
     return (
         <div>
@@ -26,6 +33,10 @@ function Navbar (){
                         <a href="/levels">
                             <button className = "navBarButton" onClick = {resetLevels}> Exit Level </button>
                         </a>
+                    </li>
+
+                    <li>
+                        <button className = "navBarButton" onClick = {displayReferences}> Get Level References </button>
                     </li>
                 </ul>
             </div>

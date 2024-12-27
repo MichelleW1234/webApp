@@ -1,7 +1,9 @@
 import React, { useState} from "react";
 import { useLevel } from '../LevelProvider.jsx';
 import { useInput } from '../InputProvider.jsx';
-import { getInput } from "../Helpers/helpers.js";
+import { useReference } from '../ReferenceProvider.jsx';
+import { getInput, getReferences } from "../Helpers/helpers.js";
+
 import "./LevelSelectionscreen.css";
 
 function LevelSelectionscreen (){
@@ -9,12 +11,18 @@ function LevelSelectionscreen (){
     const [activeButton, setActiveButton] = useState(1);
     const { level, setLevel } = useLevel();
     const { input, setInput } = useInput();
+    const {reference, setReference} = useReference();
 
     const handleClick = (index) => {
 
         setActiveButton(index);
         setLevel(index);
-        setInput(getInput(index));
+
+        const currLevelInput = getInput(index);
+        setInput(currLevelInput);
+
+        const currLevelReferences = getReferences(index);
+        setReference(currLevelReferences);
 
     };
 

@@ -2,10 +2,12 @@ import React, { useState} from "react";
 import Round from "./GamescreenElements/Roundbox.jsx";
 import Results from "./GamescreenElements/Resultsscreen.jsx";
 import Navbar from "./GamescreenElements/Navbar.jsx";
+import References from "./GamescreenElements/FloatingReferences.jsx";
 import "./Gamescreen.css";
 
 function Gamescreen (){
 
+    const [showReferences, setShowReferences] = useState(false);
     const [rounds, setRounds] = useState(1);
     const [showFlag, setShowFlag] = useState(false);
     const [computerWins, setComputerWins] = useState(0);
@@ -15,7 +17,13 @@ function Gamescreen (){
 
     return (
         <div>
-            <Navbar/>
+            <Navbar
+                showReferences = {showReferences}
+                setShowReferences = {setShowReferences}
+            />
+
+            {showReferences && 
+            (<References/>)}
                     
             {rounds < 11 ? (
                 <div className="gameScreen">
