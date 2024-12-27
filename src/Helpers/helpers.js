@@ -2,9 +2,41 @@ export const getInput = (level) => {
 
     const levelInputs = [["Rock", "Paper", "Scissors"],
                          ["Rock", "Paper", "Scissors", "Lizard", "Spock"],
-                         ["Rock", "Paper", "Scissors", "Gun", "Shield"]]
+                         ["Rock", "Paper", "Scissors", "Gun", "Shield"]];
 
     return levelInputs[level-1];
+
+};
+
+export const getReferences = (level) => {
+
+    const levelReferences = [["Rock beats scissors (Rock crushes Scissors)", 
+         "Rock loses to Paper (Paper covers Rock)",
+         "Paper beats Rock (Paper covers Rock)", 
+         "Paper loses to Scissors (Scissors cut Paper)",
+         "Scissors beats Paper (Scissors cut Paper)", 
+         "Scissors loses to Rock (Rock crushes Scissors)"],
+        ["Rock beats Scissors (Rock crushes Scissors) and Lizard (Rock crushes Lizard)",
+         "Rock loses to Paper (Paper covers Rock) and Spock (Spock vaporizes Rock)",
+         "Paper beats Rock (Paper covers Rock) and Spock (Paper disproves Spock)",
+         "Paper loses to Scissors (Scissors cut Paper) and Lizard (Lizard eats Paper)",
+         "Scissors beats Paper (Scissors cut Paper) and Lizard (Scissors decapitate Lizard)",
+         "Scissors loses to Rock (Rock crushes Scissors) and Spock (Spock smashes Scissors)", 
+         "Lizard beats Paper (Lizard eats Paper) and Spock (Lizard poisons Spock)",
+         "Lizard loses to Rock (Rock crushes Lizard) and Scissors (Scissors decapitate Lizard)",
+         "Spocks beats Rock (Spock vaporizes Rock) and Scissors (Spock smashes Scissors)",
+         "Spock loses to Paper (Paper disproves Spock) ande Lizard (Lizard poisons Spock)"],
+         ["Gun defeats everything except Shield",
+          "Shield loses to everything except Gun",
+          "If Shield is drawn on Gun, then the game IMMEDIATELY terminates with the winner being the one who drew Shield",
+          "Rock beats scissors (Rock crushes Scissors)", 
+          "Rock loses to Paper (Paper covers Rock)",
+          "Paper beats Rock (Paper covers Rock)", 
+          "Paper loses to Scissors (Scissors cut Paper)",
+          "Scissors beats Paper (Scissors cut Paper)", 
+          "Scissors loses to Rock (Rock crushes Scissors)"]];
+            
+    return levelReferences[level-1];
 
 };
 
