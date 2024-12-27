@@ -25,6 +25,8 @@
     border-top: 1px solid black;
     border-right: 1px solid black;
 
+    animation: glowing-shadow 4s infinite;
+
 }
 
 .restartButton{
@@ -36,7 +38,7 @@
     border-left: 4.5px solid black;
     border-bottom: 4.5px solid black;
 
-    animation: glitch-move 4s infinite;
+    animation: glitch-move 4s infinite, glowing-shadow 4s infinite;
     animation-delay: 0s;
 
 }

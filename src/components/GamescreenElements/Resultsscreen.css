@@ -31,6 +31,8 @@
     border-top: 1.5px solid black;
     border-right: 1.5px solid black;
 
+    animation: glowing-shadow 4s infinite;
+
 }
 
 .floatingButton {
@@ -41,7 +43,7 @@
     border-left: 4.5px solid black;
     border-bottom: 4.5px solid black;
 
-    animation: glitch-move 3s infinite;
+    animation: glitch-move 3s infinite, glowing-shadow 4s infinite;
     animation-delay: 0s;
 
 }
