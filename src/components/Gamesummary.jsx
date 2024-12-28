@@ -28,11 +28,10 @@ function Gamesummary (){
         <div className="GameSummary">
             <h1 className = "GameSummarySign"><span className="GameSummarySignGlitch">Game</span> Summary:  </h1>
             <div className = "stats">
-                <p className = "words"> Computer Wins: {computerWins} </p>
-                <p className = "words"> User Wins: {userWins} </p>
+                <p> Computer Wins: {computerWins} </p>
+                <p> User Wins: {userWins} </p>
+                <p>{winner}</p>
             </div>
-
-            <h1 className = "words">{winner}</h1>
             <a href="/start">
                 <button className = "restartButton"> Restart </button>
             </a>
