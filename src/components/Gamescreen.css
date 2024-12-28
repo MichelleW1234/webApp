@@ -10,7 +10,7 @@
 .gameOver{
 
     margin-top: 200px;
-    gap: 45px;
+    gap: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;

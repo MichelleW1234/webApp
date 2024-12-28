@@ -13,7 +13,7 @@
 
 }
 
-.result {
+.resultsContainer {
 
     display:flex;
     flex-direction: column;
@@ -33,6 +33,22 @@
     box-shadow: 0 0 30px 6px rgb(211, 157, 255);
 
 }
+
+.results{
+
+    color: white;
+    font-size: 30px;
+
+}
+
+.resultsglitch {
+
+    color: white;
+    font-size: 30px;
+    animation: sign-glitch 3s infinite;
+
+}
+
 
 .floatingButton {
 

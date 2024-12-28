@@ -26,7 +26,7 @@ function Gamesummary (){
 
     return (
         <div className="GameSummary">
-            <h1 className = "GameSummaryHeader">Game Summary:  </h1>
+            <h1 className = "GameSummarySign"><span className="GameSummarySignGlitch">Game</span> Summary:  </h1>
             <div className = "stats">
                 <p className = "words"> Computer Wins: {computerWins} </p>
                 <p className = "words"> User Wins: {userWins} </p>

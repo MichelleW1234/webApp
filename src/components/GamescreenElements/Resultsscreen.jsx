@@ -22,11 +22,16 @@ function Resultsscreen ({result, rounds, setRounds, showFlag, setShowFlag, termi
     return (
         <div className = "floatingFlag">
 
-            <div className = "result"> 
+            <div className = "resultsContainer"> 
                 
-                {result.map((line, index) => (
-                    <p className = "words" key={index}>{line}</p>
-                ))}
+            {result.map((line, index) => (
+                <p 
+                    className={`results${index === 1 ? "glitch" : ""}`}
+                    key={index}
+                >
+                    {line}
+                </p>
+            ))}
 
                 <button className = "floatingButton" onClick={handleHideFlag}> Close </button>
             </div>

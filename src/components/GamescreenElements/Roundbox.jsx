@@ -67,7 +67,7 @@ function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins,
     return (
 
         <div className="gameScreenContainer">
-            <h1 className = "RoundNumberSign">Round: {round}</h1>
+            <h1 className = "RoundNumberSign"><span className="RoundNumberSignGlitch">Round:</span>{round}</h1>
 
             <div className = "directions">
                 <p>Enter one of the following in the space below: </p>

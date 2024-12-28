@@ -63,6 +63,7 @@ button{
     0%, 44% {
       text-transform: translate(0, 0);
       text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffc3;
+     
     }
     45%, 46% {
       text-transform: translate(-5px, -2px);
@@ -83,6 +84,7 @@ button{
     56%, 100% {
       text-transform: translate(0, 0);
       text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffc3;
+     
     }
   }
 
