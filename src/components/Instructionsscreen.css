@@ -1,20 +1,28 @@
 .instructions{
 
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     padding: 20px;
     align-items: center;
 
 }
 
-.paragraph{
+.InstructionsHeading{
 
-    font-size: 20px;
+    font-size: 35px;
+    border-radius: 30px;
+    padding: 10px;
+
+    color: white;
+    background-color: rgb(243, 154, 255);
+    border: 5px solid rgba(0, 253, 46, 0.521);
+    animation: sign-glitch 3s infinite, glowing-sign-shadows 4s infinite;
 
 }
 
-.continueButton {
+.chooseLevelButton {
     
     background-color:rgb(0, 242, 255);
     padding: 10px;
@@ -22,12 +30,12 @@
     border-left: 5.5px solid black;
     border-bottom: 5.5px solid black;
     
-    animation: glitch-move 4s infinite, glowing-shadow 4s infinite;
+    animation: button-glitch 4s infinite, glowing-button-shadows 4s infinite;
     animation-delay: 0s;
 
 }
 
-.continueButton:hover {
+.chooseLevelButton:hover {
 
     background-color: rgb(47, 0, 255);
     color: white;
