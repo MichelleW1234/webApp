@@ -23,7 +23,6 @@
     border-top: 3px solid black;
     border-left: 10px solid black;
     border-bottom: 10px solid black;
-
     border-radius: 20px;
 
     box-shadow:  0 0 30px 4px rgb(0, 204, 255);
@@ -97,7 +96,7 @@
     border-left: 5.5px solid black;
     border-bottom: 5.5px solid black;
     
-    animation: glowing-shadow2 4s infinite;
+    animation: glowing-shadow1 4s infinite;
     animation-delay: 0s;
 
 }

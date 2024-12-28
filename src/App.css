@@ -2,13 +2,14 @@ body {
 
   /*background: rgb(108, 13, 122);*/
   background: rgb(93, 11, 105);
+  
     
 }
 
 *{
 
   font-family: monospace;
-  text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffd5;
+  text-shadow: 1px 1px 4px #ff69ebba, -1px -1px 4px #00ffffd5;
   position: relative;
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ body {
 
   font-size: 30px;
   color: white;
-  text-shadow: 1px 1px 4px #f700ff, -1px -1px 4px #f700ff, 1px -1px 4px #f700ff, -1px 1px 4px #f700ff;
+  text-shadow: 0.5px 0.5px 4px #f700ff, -0.5px -0.5px 4px #2bff00, 0.5px -0.5px 4px #f700ff, -0.5px 0.5px 4px #2bff00;
 
 }
 
@@ -29,10 +30,12 @@ button{
   font-weight: bold;
   border-radius: 0px;
   border-radius: 0px;
+  color: rgba(0, 0, 0, 0.662);
 
 }
 
 @keyframes button-glitch {
+
     0%, 44% {
       text-transform: translate(0, 0);
       text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
@@ -57,10 +60,12 @@ button{
       text-transform: translate(0, 0);
       text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
     }
+
   }
 
 
   @keyframes sign-glitch {
+
     0%, 44% {
       text-transform: translate(0, 0);
       text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffc3;
@@ -87,26 +92,28 @@ button{
       text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffc3;
      
     }
+
   }
 
   @keyframes glowing-shadow1 {
+
     0% {
       box-shadow: 
         0 0 10px 4px rgb(0, 242, 255),
         0 0 30px 6px rgb(247, 0, 255),
-        0 0 50px 10px rgb(115, 0, 255);
+        0 0 50px 10px rgb(153, 0, 255);
     }
     50% {
       box-shadow: 
         0 0 10px 4px rgba(0, 242, 255, 0.365),
         0 0 30px 6px rgba(247, 0, 255, 0.361),
-        0 0 50px 10px rgba(115, 0, 255, 0.349);
+        0 0 50px 10px rgba(153, 0, 255, 0.392);
     }
     100% {
       box-shadow:
         0 0 10px 4px rgb(0, 242, 255),
         0 0 30px 6px rgb(247, 0, 255),
-        0 0 50px 10px rgb(115, 0, 255);
+        0 0 50px 10px rgb(153, 0, 255);
     }
   }
 
@@ -129,9 +136,11 @@ button{
         0 0 20px 4px rgb(0, 242, 255),
         0 0 30px 6px rgb(0, 200, 255);  
     }
+
   }
 
   @keyframes glowing-shadow3 {
+
     0% {
       box-shadow: 
         0 0 10px 2px rgb(240, 32, 255),
@@ -150,9 +159,11 @@ button{
         0 0 20px 4px rgb(180, 42, 255),
         0 0 35px 6px rgb(33, 37, 255);
     }
+
   }
 
   @keyframes glowing-shadow4 {
+
     0% {
       box-shadow: 
         0 0 10px 4px rgb(70, 143, 253),
@@ -171,42 +182,31 @@ button{
         0 0 20px 6px rgb(117, 79, 252),
         0 0 35px 8px rgb(153, 80, 254);
     }
+
   }
 
 
   @keyframes glowing-sign-shadows{
+
     0% {
       box-shadow: 
-        0 0 10px 2px rgb(4, 255, 0), /* Inner shadow-like layer */
-        0 0 30px 4px rgb(0, 204, 255), /* Mid shadow layer */
-        0 0 50px 6px rgb(251, 0, 255); /* Outer shadow layer */
+        0 0 10px 5px rgb(0, 255, 94), /* Inner shadow-like layer */
+        0 0 30px 7px rgb(0, 204, 255), /* Mid shadow layer */
+        0 0 50px 9px rgb(251, 0, 255); /* Outer shadow layer */
     }
     50% {
       box-shadow: 
-        0 0 10px 2px rgb(3, 167, 0), /* Inner shadow-like layer */
-        0 0 30px 4px rgb(0, 140, 175), /* Mid shadow layer */
-        0 0 50px 6px rgb(175, 0, 178); /* Outer shadow layer */
+        0 0 10px 5px rgba(0, 255, 94, 0.516), /* Inner shadow-like layer */
+        0 0 30px 7px rgba(0, 204, 255, 0.515), /* Mid shadow layer */
+        0 0 50px 9px rgba(251, 1, 255, 0.526); /* Outer shadow layer */
     }
     100% {
         box-shadow: 
-        0 0 10px 2px rgb(4, 255, 0), /* Inner shadow-like layer */
-        0 0 30px 4px rgb(0, 204, 255), /* Mid shadow layer */
-        0 0 50px 6px rgb(251, 0, 255); /* Outer shadow layer */
+        0 0 10px 5px rgb(0, 255, 94), /* Inner shadow-like layer */
+        0 0 30px 7px rgb(0, 204, 255), /* Mid shadow layer */
+        0 0 50px 9px rgb(251, 0, 255); /* Outer shadow layer */
     }
+    
   }
-
-/*
-  @keyframes glowing-large-words-shadows{
-    0% {
-      text-shadow: 2px 2px 4px #f700ff, -2px -2px 4px #f700ff, 2px -2px 4px #f700ff, -2px 2px 4px #f700ff;
-    }
-    50% {
-      text-shadow: 2px 2px 4px #5500ff, -2px -2px 4px #5500ff;
-    }
-    100% {
-      text-shadow: 2px 2px 4px #f700ff, -2px -2px 4px #f700ff, 2px -2px 4px #f700ff, -2px 2px 4px #f700ff;
-    }
-  }
-*/
 
 

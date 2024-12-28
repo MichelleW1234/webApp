@@ -13,7 +13,13 @@
 
     color: rgb(255, 255, 255);
     font-size: 40px;
-    text-shadow: 2px 2px 4px #f700ff, -2px -2px 4px #f700ff, 2px -2px 4px #f700ff, -2px 2px 4px #f700ff;
+    text-shadow: 1px 1px 4px #f700ff, -1px -1px 4px rgb(0, 255, 94), 1px -1px 4px #f700ff, -1px 1px 4px rgb(0, 255, 94);
+
+}
+
+.introGlitch{
+
+    animation: sign-glitch 3s infinite;
 
 }
 
@@ -27,7 +33,7 @@
     border-top: 2.5px solid black;
     border-right: 2.5px solid black;
 
-    animation: button-glitch 4s infinite, glowing-shadow2 4s infinite;
+    animation: button-glitch 4s infinite, glowing-shadow1 4s infinite;
     
 }
 
