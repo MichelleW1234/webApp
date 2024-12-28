@@ -34,18 +34,18 @@ function Navbar ({showReferences, setShowReferences}){
                 <ul className = "navbarMenu">
                     <li>
                         <a href="/start">
-                            <button className = "navBarButton" onClick = {resetLevels}> Exit Game </button>
+                            <button className = "navBarButton" onClick = {resetLevels}> Quit Game </button>
                         </a>
                     </li>
 
                     <li>
                         <a href="/levels">
-                            <button className = "navBarButton" onClick = {resetLevels}> Exit Level </button>
+                            <button className = "navBarButton" onClick = {resetLevels}> Change Level </button>
                         </a>
                     </li>
 
                     <li>
-                        <button className = "readMoveReferencesButton" onClick = {displayReferences}> Read Move References </button>
+                        <button className = "readMoveReferencesButton" onClick = {displayReferences}> Move References </button>
                     </li>
                 </ul>
             </div>
