@@ -11,6 +11,7 @@ import "./App.css";
 function App() {
 
   return (
+    <div className = "innerboarder">
     <BrowserRouter>
       <Routes>
         <Route index element={<Startscreen />}/>
@@ -24,6 +25,7 @@ function App() {
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
+    </div>
   )
 }
 

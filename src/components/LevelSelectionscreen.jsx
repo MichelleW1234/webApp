@@ -29,13 +29,15 @@ function LevelSelectionscreen (){
     return (
         <div className = "levelsScreen">
 
-            <h1> Select a level below (default is 1): </h1>
+            <h1 className = "words"> Select a level below (default is 1): </h1>
 
             <div className = "levelsContainer">
 
                 <div className = "LevelsWindowContainer">
 
-                    <h2 className = "LevelsWindow"> Level 1 </h2>
+                    <div className = "LevelsWindow"> 
+                        <h2>Level 1</h2>
+                    </div>
                     <button
                     className={`LevelButton ${activeButton === 1 ? 'active' : ''}`}
                     onClick={() => handleClick(1)}
@@ -47,8 +49,9 @@ function LevelSelectionscreen (){
 
                 <div className = "LevelsWindowContainer">
 
-                    <h2 className = "LevelsWindow"> Level 2 </h2>
-
+                    <div className = "LevelsWindow"> 
+                        <h2 className = "glitchy">Level 2</h2> 
+                    </div>
                     <button
                     className={`LevelButton ${activeButton === 2 ? 'active' : ''}`}
                     onClick={() => handleClick(2)}
@@ -60,8 +63,9 @@ function LevelSelectionscreen (){
 
                 <div className = "LevelsWindowContainer">
 
-                    <h2 className = "LevelsWindow"> Level 3 </h2>
-
+                    <div className = "LevelsWindow"> 
+                        <h2>Level 3</h2>
+                    </div>
                     <button
                     className={`LevelButton ${activeButton === 3 ? 'active' : ''}`}
                     onClick={() => handleClick(3)}

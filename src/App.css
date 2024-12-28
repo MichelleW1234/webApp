@@ -1,24 +1,25 @@
 body {
 
-    background: rgb(233, 95, 254); /* Sets a solid background color */
+  background: rgb(145, 18, 165);
     
 }
 
 *{
 
   font-family: monospace;
-  text-shadow: 2px 2px 4px #fcb8f4, -2px -2px 4px #95b1ff;
+  text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffd5;
   position: relative;
-  
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .words {
 
-  font-size: 23px;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 4px #f700ff, -1px -1px 4px #f700ff, 1px -1px 4px #f700ff, -1px 1px 4px #f700ff;
 
 }
 
@@ -30,56 +31,106 @@ button{
 
 }
 
-@keyframes glitch-move {
+@keyframes button-glitch {
     0%, 44% {
-      transform: translate(0, 0);
+      text-transform: translate(0, 0);
       text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
     }
     45%, 46% {
-      transform: translate(-5px, -2px);
+      text-transform: translate(-5px, -2px);
       text-shadow: 4px -4px 4px #c800ff, -4px 4px 4px #007bff;
     }
     47%, 49% {
-      transform: translate(4px, 3px);
+      text-transform: translate(4px, 3px);
       text-shadow: -4px 2px 4px #ff8400, 4px -2px 4px #00ff7f;
     }
     50%, 52% {
-      transform: translate(-3px, 5px);
+      text-transform: translate(-3px, 5px);
       text-shadow: 5px -5px 4px #fd2828, -5px 5px 4px #5661fc;
     }
     52%, 55% {
-        transform: translate(4px, 3px);
+      text-transform: translate(4px, 3px);
         text-shadow: 5px -5px 4px #ff69b4, -5px 5px 4px #00ffff;
     }
     56%, 100% {
-      transform: translate(0, 0);
+      text-transform: translate(0, 0);
       text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
     }
   }
 
 
-  @keyframes glitch {
-    0% {
-      text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
+  @keyframes sign-glitch {
+    0%, 44% {
+      text-transform: translate(0, 0);
+      text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffc3;
     }
-    50% {
-      text-shadow: 4px -4px 4px #ff69b4, -4px 4px 4px #00ffff;
+    45%, 46% {
+      text-transform: translate(-5px, -2px);
+      text-shadow: 4px -4px 4px #c800ff, -4px 4px 4px #00ccff;
     }
-    100% {
-      text-shadow: 2px 2px 4px #ff69b4, -2px -2px 4px #00ffff;
+    47%, 49% {
+      text-transform: translate(4px, 3px);
+      text-shadow: -4px 2px 4px #ff7bf2, 4px -2px 4px #6cff71;
+    }
+    50%, 52% {
+      text-transform: translate(-3px, 5px);
+      text-shadow: 5px -5px 4px #ff00a2, -5px 5px 4px #57f4ff;
+    }
+    52%, 55% {
+      text-transform: translate(4px, 3px);
+        text-shadow: 5px -5px 4px #fc6af3, -5px 5px 4px #58ff6f;
+    }
+    56%, 100% {
+      text-transform: translate(0, 0);
+      text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffc3;
     }
   }
 
-  @keyframes glowing-shadow {
+  @keyframes glowing-button-shadows {
     0% {
-      box-shadow: 0 0 20px rgb(255, 0, 255);
+      box-shadow: 0 0 30px rgb(255, 0, 255);
     }
     50% {
       box-shadow: 0 0 45px rgb(0, 242, 255);
     }
     100% {
-      box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+      box-shadow: 0 0 30px rgba(255, 0, 255);
     }
   }
+
+  @keyframes glowing-sign-shadows{
+    0% {
+      box-shadow: 
+        0 0 10px 2px rgb(4, 255, 0), /* Inner shadow-like layer */
+        0 0 30px 4px rgb(0, 204, 255), /* Mid shadow layer */
+        0 0 50px 6px rgb(251, 0, 255); /* Outer shadow layer */
+    }
+    50% {
+      box-shadow: 
+        0 0 10px 2px rgb(2, 117, 0), /* Inner shadow-like layer */
+        0 0 30px 4px rgb(0, 112, 140), /* Mid shadow layer */
+        0 0 50px 6px rgb(125, 0, 127); /* Outer shadow layer */
+    }
+    100% {
+        box-shadow: 
+        0 0 10px 2px rgb(4, 255, 0), /* Inner shadow-like layer */
+        0 0 30px 4px rgb(0, 204, 255), /* Mid shadow layer */
+        0 0 50px 6px rgb(251, 0, 255); /* Outer shadow layer */
+    }
+  }
+
+
+  @keyframes glowing-large-words-shadows{
+    0% {
+      text-shadow: 2px 2px 4px #f700ff, -2px -2px 4px #f700ff, 2px -2px 4px #f700ff, -2px 2px 4px #f700ff;
+    }
+    50% {
+      text-shadow: 2px 2px 4px #5500ff, -2px -2px 4px #5500ff;
+    }
+    100% {
+      text-shadow: 2px 2px 4px #f700ff, -2px -2px 4px #f700ff, 2px -2px 4px #f700ff, -2px 2px 4px #f700ff;
+    }
+  }
+
 
 

@@ -12,11 +12,11 @@ function Gamesummary (){
 
     if (computerWins > userWins) {
 
-      winner = "You lost.";
+      winner = "You lost. :(";
 
     } else if (computerWins < userWins) {
 
-      winner = "You won!";
+      winner = "You won! :)";
 
     } else {
 
@@ -26,13 +26,13 @@ function Gamesummary (){
 
     return (
         <div className="GameSummary">
-            <h1>Game Summary:  </h1>
+            <h1 className = "GameSummaryHeader">Game Summary:  </h1>
             <div className = "stats">
                 <p className = "words"> Computer Wins: {computerWins} </p>
                 <p className = "words"> User Wins: {userWins} </p>
             </div>
 
-            <h1 >{winner}</h1>
+            <h1 className = "words">{winner}</h1>
             <a href="/start">
                 <button className = "restartButton"> Restart </button>
             </a>

@@ -36,7 +36,7 @@ function Navbar ({showReferences, setShowReferences}){
                     </li>
 
                     <li>
-                        <button className = "navBarButton" onClick = {displayReferences}> Get Level References </button>
+                        <button className = "readMoveReferencesButton" onClick = {displayReferences}> Read Move References </button>
                     </li>
                 </ul>
             </div>

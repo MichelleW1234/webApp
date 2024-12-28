@@ -7,10 +7,7 @@
     width: 100vw;
     height: 100vh;
     align-items: center;
-    justify-content: center;
     z-index: 10; /* Ensures it appears above other elements */
-    padding: 20px;
-    gap: 50px;
 
     background-color: rgba(0, 47, 255, 0.5); /* Semi-transparent background */
     
@@ -18,31 +15,34 @@
 
 .FloatingReferencesFlag {
 
+    margin-top: 80px;
     display:flex;
     flex-direction: column;
-    background-color: rgb(252, 135, 254);
+    background-color: rgb(220, 74, 234);
     color: rgb(0, 0, 0);
-    padding: 30px;
-    border-radius: 10px;
-    gap: 20px;
+    padding: 50px;
+    border-radius: 20px;
+    gap: 40px;
     border-bottom: 9px solid black;
     border-left: 9px solid black;
     border-top: 2px solid black;
     border-right: 2px solid black;
 
-    animation: glowing-shadow 4s infinite;
+    animation: glowing-button-shadows 4s infinite;
 
 }
 
 .header{
 
     align-self: center;
-    background-color: rgb(255, 255, 255);
-    border: 5px solid rgb(251, 173, 253);
-    border-radius: 8px;
-    padding: 5px;
+    color: white;
 
-    animation: glowing-shadow 4s infinite, glitch 4s infinite;
+    background-color: rgb(255, 140, 247);
+    border: 5px solid rgba(122, 253, 151, 0.635);
+    border-radius: 25px;
+    padding: 10px;
+
+    animation: glowing-sign-shadows 4s infinite,  sign-glitch 4s infinite;
 
 }
 
