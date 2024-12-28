@@ -1,4 +1,8 @@
 import { useLocation } from "react-router-dom";
+import { useLevel } from '../LevelProvider.jsx';
+import { useInput } from '../InputProvider.jsx';
+import { useReference } from '../ReferenceProvider.jsx';
+import { getReferences, getInput} from "../Helpers/helpers.js";
 import "./Gamesummary.css";
 
 function Gamesummary (){
@@ -24,6 +28,22 @@ function Gamesummary (){
 
     }
 
+    const { level, setLevel } = useLevel();
+    const { input, setInput } = useInput();
+    const { reference, setReference } = useReference();
+    
+    const resetLevels = () => {
+
+      setLevel(1);
+
+      const defaultInput = getInput(1);
+      setInput(defaultInput);
+
+      const defaultReferences = getReferences(1);
+      setReference(defaultReferences);
+
+    };
+
     return (
         <div className="GameSummary">
             <h1 className = "GameSummarySign"><span className="GameSummarySignGlitch">Game</span> Summary:  </h1>
@@ -33,7 +53,7 @@ function Gamesummary (){
                 <p>{winner}</p>
             </div>
             <a href="/start">
-                <button className = "restartButton"> Restart </button>
+                <button className = "restartButton" onClick = {resetLevels}> Restart </button>
             </a>
         </div>
 
