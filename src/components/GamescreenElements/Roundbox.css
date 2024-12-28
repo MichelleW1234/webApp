@@ -26,7 +26,7 @@
 
     padding: 10px;
     border-radius: 25px;
-    background-color: rgb(176, 162, 255);
+    background-color: rgb(188, 176, 255);
     border: 5px solid rgba(1, 255, 35, 0.586);
     color: white;
     animation:glowing-sign-shadows 4s infinite;
