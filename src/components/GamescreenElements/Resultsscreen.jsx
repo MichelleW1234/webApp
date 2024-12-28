@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./Resultsscreen.css";
 
 function Resultsscreen ({result, rounds, setRounds, showFlag, setShowFlag, terminationFlag}){

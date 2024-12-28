@@ -1,3 +1,15 @@
+export const resetLevel = (setLevel, setInput, setReference) => {
+
+    setLevel(1);
+
+    const defaultInput = getInput(1);
+    setInput(defaultInput);
+
+    const defaultReferences = getReferences(1);
+    setReference(defaultReferences);
+
+}
+
 export const getInput = (level) => {
 
     const levelInputs = [["Rock", "Paper", "Scissors"],
@@ -80,7 +92,6 @@ export const decideRoundWinnerLevel1 = (userMove, result, setResult) => {
     }
     return -1;
 };
-
 
 export const decideRoundWinnerLevel2 = (userMove, result, setResult) => {
 

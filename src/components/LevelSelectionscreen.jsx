@@ -77,7 +77,6 @@ function LevelSelectionscreen (){
 
             </div>
             
-            {/*onClick, save selected button in LevelProvider*/}
             <a href = "/game">
                 <button className = "continueButton"> Continue to Game </button>
             </a>
