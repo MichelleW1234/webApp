@@ -1,6 +1,6 @@
 body {
 
-  background: rgb(145, 18, 165);
+  background: rgb(108, 13, 122);
     
 }
 
@@ -86,17 +86,90 @@ button{
     }
   }
 
-  @keyframes glowing-button-shadows {
+  @keyframes glowing-shadow1 {
     0% {
-      box-shadow: 0 0 30px rgb(255, 0, 255);
+      box-shadow: 
+        0 0 10px 4px rgb(0, 242, 255),
+        0 0 30px 6px rgb(247, 0, 255),
+        0 0 50px 10px rgb(115, 0, 255);
     }
     50% {
-      box-shadow: 0 0 45px rgb(0, 242, 255);
+      box-shadow: 
+        0 0 10px 4px rgba(0, 242, 255, 0.365),
+        0 0 30px 6px rgba(247, 0, 255, 0.361),
+        0 0 50px 10px rgba(115, 0, 255, 0.349);
     }
     100% {
-      box-shadow: 0 0 30px rgba(255, 0, 255);
+      box-shadow:
+        0 0 10px 4px rgb(0, 242, 255),
+        0 0 30px 6px rgb(247, 0, 255),
+        0 0 50px 10px rgb(115, 0, 255);
     }
   }
+
+  @keyframes glowing-shadow2 {
+    0% {
+      box-shadow: 
+        0 0 10px 2px rgb(150, 255, 250),
+        0 0 20px 4px rgb(0, 242, 255),
+        0 0 30px 6px rgb(0, 200, 255);
+    }
+    50% {
+      box-shadow: 
+        0 0 10px 2px rgba(150, 255, 250, 0.365),
+        0 0 20px 4px rgba(0, 242, 255, 0.397),
+        0 0 30px 6px rgba(0, 200, 255, 0.366);
+      }
+    100% {
+      box-shadow:
+        0 0 10px 2px rgb(150, 255, 250),
+        0 0 20px 4px rgb(0, 242, 255),
+        0 0 30px 6px rgb(0, 200, 255);  
+    }
+  }
+
+  @keyframes glowing-shadow3 {
+    0% {
+      box-shadow: 
+        0 0 10px 2px rgb(240, 32, 255),
+        0 0 20px 4px rgb(180, 42, 255),
+        0 0 35px 6px rgb(33, 37, 255);
+    }
+    50% {
+      box-shadow: 
+        0 0 10px 2px rgba(240, 32, 255, 0.393),
+        0 0 20px 4px rgba(180, 42, 255, 0.419),
+        0 0 35px 6px rgba(33, 37, 255, 0.405);
+    }
+    100% {
+      box-shadow:
+        0 0 10px 2px rgb(240, 32, 255),
+        0 0 20px 4px rgb(180, 42, 255),
+        0 0 35px 6px rgb(33, 37, 255);
+    }
+  }
+
+  @keyframes glowing-shadow4 {
+    0% {
+      box-shadow: 
+        0 0 10px 4px rgb(70, 143, 253),
+        0 0 20px 6px rgb(117, 79, 252),
+        0 0 35px 8px rgb(153, 80, 254);
+    }
+    50% {
+      box-shadow: 
+        0 0 10px 4px rgba(70, 143, 253, 0.383),
+        0 0 20px 6px rgba(116, 79, 252, 0.335),
+        0 0 35px 8px rgba(152, 80, 254, 0.373);
+    }
+    100% {
+      box-shadow:
+        0 0 10px 4px rgb(70, 143, 253),
+        0 0 20px 6px rgb(117, 79, 252),
+        0 0 35px 8px rgb(153, 80, 254);
+    }
+  }
+
 
   @keyframes glowing-sign-shadows{
     0% {
@@ -107,9 +180,9 @@ button{
     }
     50% {
       box-shadow: 
-        0 0 10px 2px rgb(2, 117, 0), /* Inner shadow-like layer */
-        0 0 30px 4px rgb(0, 112, 140), /* Mid shadow layer */
-        0 0 50px 6px rgb(125, 0, 127); /* Outer shadow layer */
+        0 0 10px 2px rgb(3, 167, 0), /* Inner shadow-like layer */
+        0 0 30px 4px rgb(0, 140, 175), /* Mid shadow layer */
+        0 0 50px 6px rgb(175, 0, 178); /* Outer shadow layer */
     }
     100% {
         box-shadow: 

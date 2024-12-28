@@ -15,8 +15,6 @@
     font-size: 40px;
     text-shadow: 2px 2px 4px #f700ff, -2px -2px 4px #f700ff, 2px -2px 4px #f700ff, -2px 2px 4px #f700ff;
 
-    /*    animation: glowing-large-words-shadows 4s infinite;*/
-
 }
 
 .startButton {
@@ -29,8 +27,7 @@
     border-top: 2.5px solid black;
     border-right: 2.5px solid black;
 
-    animation: button-glitch 4s infinite, glowing-button-shadows 3s infinite;
-    animation-delay: 0s;
+    animation: button-glitch 4s infinite, glowing-shadow2 4s infinite;
     
 }
 
@@ -38,5 +35,6 @@
 
     background-color: rgb(13, 0, 255);
     color: white;
+    animation: button-glitch 4s infinite, glowing-shadow4 4s infinite;
 
 }

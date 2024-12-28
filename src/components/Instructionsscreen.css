@@ -30,8 +30,7 @@
     border-left: 5.5px solid black;
     border-bottom: 5.5px solid black;
     
-    animation: button-glitch 4s infinite, glowing-button-shadows 4s infinite;
-    animation-delay: 0s;
+    animation: button-glitch 4s infinite, glowing-shadow2 4s infinite;
 
 }
 
@@ -39,5 +38,6 @@
 
     background-color: rgb(47, 0, 255);
     color: white;
+    animation: button-glitch 4s infinite, glowing-shadow4 4s infinite;
     
 }
