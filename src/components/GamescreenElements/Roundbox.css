@@ -36,10 +36,6 @@
 
 .RoundNumberSignGlitch{
 
-    padding: 10px;
-    border-radius: 25px;
-    color: white;
-    
     animation: sign-glitch 4s infinite;
     
 }

@@ -23,8 +23,6 @@
 
 .GameSummarySignGlitch{
 
-    color: white;
-    
     animation: sign-glitch 3s infinite;
 
 }
