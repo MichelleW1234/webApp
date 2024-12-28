@@ -4,7 +4,7 @@ import { useReference } from '../../ReferenceProvider.jsx';
 import {resetLevel} from "../../Helpers/helpers.js";
 import "./Navbar.css";
 
-function Navbar ({showReferences, setShowReferences}){
+function Navbar ({setShowReferences}){
 
     const { level, setLevel } = useLevel();
     const { input, setInput } = useInput();

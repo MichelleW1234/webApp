@@ -4,8 +4,8 @@ import { useInput } from '../../InputProvider.jsx';
 import { useLevel } from '../../LevelProvider.jsx'; 
 import "./Roundbox.css";
 
-function Roundbox ({round, showFlag, setShowFlag, computerWins, setComputerWins, userWins, setUserWins, result, 
-    setResult, terminationFlag, setTerminationFlag}){
+function Roundbox ({round, setShowFlag, setComputerWins, setUserWins, result, 
+    setResult, setTerminationFlag}){
 
     const {input} = useInput();
     const currInput = input;

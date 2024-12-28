@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Resultsscreen.css";
 
-function Resultsscreen ({result, rounds, setRounds, showFlag, setShowFlag, terminationFlag}){
+function Resultsscreen ({result, setRounds, setShowFlag, terminationFlag}){
 
     const handleHideFlag = () => {
 

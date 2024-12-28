@@ -18,7 +18,6 @@ function Gamescreen (){
     return (
         <div>
             <Navbar
-                showReferences = {showReferences}
                 setShowReferences = {setShowReferences}
             />
 
@@ -30,15 +29,11 @@ function Gamescreen (){
 
                     <Round 
                         round={rounds} 
-                        showFlag={showFlag}
                         setShowFlag={setShowFlag}
-                        computerWins = {computerWins}
                         setComputerWins = {setComputerWins}
-                        userWins = {userWins}
                         setUserWins = {setUserWins}
                         result = {result}
                         setResult = {setResult}
-                        terminationFlag = {terminationFlag}
                         setTerminationFlag = {setTerminationFlag}
                     />
 
@@ -46,9 +41,7 @@ function Gamescreen (){
 
                         <Results
                             result = {result}
-                            rounds={rounds}
                             setRounds={setRounds}
-                            showFlag={showFlag}
                             setShowFlag={setShowFlag}
                             terminationFlag = {terminationFlag}
                         />
