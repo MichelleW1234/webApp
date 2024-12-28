@@ -1,6 +1,5 @@
 body {
 
-  background: rgb(233, 95, 254);
   background: rgb(145, 18, 165);
     
 }
@@ -8,8 +7,6 @@ body {
 *{
 
   font-family: monospace;
-  /*text-shadow: 2px 2px 4px #fcb8f4, -2px -2px 4px #95b1ff;
-  text-shadow: 1px 1px 4px #ffffff7c, -1px -1px 4px #ffffff7c, 1px -1px 4px #ffffff7c, -1px 1px 4px #ffffff7c;*/
   text-shadow: 2px 2px 4px #ff69b4ba, -2px -2px 4px #00ffffd5;
   position: relative;
   margin: 0;
