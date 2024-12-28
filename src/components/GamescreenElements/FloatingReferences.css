@@ -28,21 +28,28 @@
     border-top: 2px solid black;
     border-right: 2px solid black;
 
-    animation: glowing-button-shadows 4s infinite;
+    box-shadow: 0 0 80px rgb(254, 82, 252);
 
 }
 
-.header{
+.ReferenceSign{
 
     align-self: center;
     color: white;
 
-    background-color: rgb(255, 140, 247);
+    background-color: rgb(252, 162, 246);
     border: 5px solid rgba(122, 253, 151, 0.635);
     border-radius: 25px;
     padding: 10px;
+    font-size: 30px;
 
-    animation: glowing-sign-shadows 4s infinite,  sign-glitch 4s infinite;
+    animation: glowing-sign-shadows 4s infinite;
+
+}
+
+.ReferenceSignGlitch{
+
+    animation: sign-glitch 4s infinite;
 
 }
 
@@ -51,7 +58,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-size: 20px;
+    font-size: 23px;
     max-width: 600px;
     max-height: 500px;
     overflow-y: auto;

@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    background-color: rgb(136, 115, 255);
+    background-color: rgb(151, 133, 253);
     width: 600px;
     height: 500px;
     overflow-y: auto;
@@ -17,8 +17,7 @@
     border-top: 2px solid black;
     border-right: 2px solid black;
 
-    box-shadow: 0 0 10px 2px rgb(255, 0, 221); /* Inner shadow-like layer */
-    animation: glowing-button-shadows 4s infinite;
+    box-shadow: 0 0 40px 8px rgb(160, 117, 253);
 
 }
 
@@ -27,12 +26,18 @@
 
     padding: 10px;
     border-radius: 25px;
-    background-color: rgb(176, 162, 255);
+    background-color: rgb(188, 176, 255);
     border: 5px solid rgba(1, 255, 35, 0.586);
     color: white;
-    animation: sign-glitch 4s infinite, glowing-sign-shadows 4s infinite;
-    
 
+    animation:glowing-sign-shadows 4s infinite;
+    
+}
+
+.RoundNumberSignGlitch{
+
+    animation: sign-glitch 4s infinite;
+    
 }
 
 .directions {
@@ -49,7 +54,7 @@
     border-left: 5px solid black;
     border-bottom: 5px solid black;
 
-    animation: glowing-button-shadows 4s infinite;
+    animation: glowing-shadow2 4s infinite;
 
 }
 
@@ -57,11 +62,11 @@
 
     font-size: 25px;
     padding: 10px;
-    background-color: rgb(255, 104, 240);
+    background-color: rgb(252, 91, 236);
     border-left: 5.5px solid black;
     border-bottom: 5.5px solid black;
 
-    animation: glowing-button-shadows 4s infinite;
+    animation: glowing-shadow3 4s infinite;
     
 }
 
@@ -69,6 +74,7 @@
 
     background-color: #4d1fd4;
     color: white;
+    animation: glowing-shadow4 4s infinite;
 
 }
 

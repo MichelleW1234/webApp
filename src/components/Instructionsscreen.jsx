@@ -4,7 +4,7 @@ function Instructionsscreen (){
 
     return (
         <div className= "instructions">
-            <h1 className = "InstructionsHeading">Instructions: </h1>
+            <h1 className = "InstructionsSign">Instructions: </h1>
             <p className="words">
                 &gt; A game has 10 rounds.<br/>
                 &gt; In each round, you either win or lose to the computer. <br/>

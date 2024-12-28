@@ -26,7 +26,7 @@
 
     border-radius: 20px;
 
-    animation: glowing-button-shadows 4s infinite;
+    box-shadow:  0 0 30px 4px rgb(0, 204, 255);
 
 }
 
@@ -57,12 +57,11 @@
     border-top: 2px solid black;
     overflow-y: auto;
 
-    animation: glowing-button-shadows 4s infinite;
-    animation-delay: 0s;
+    box-shadow:  0 0 20px 6px rgb(0, 204, 255);
 
 }
 
-.glitchy{
+.LevelGlitch{
 
     animation: button-glitch 4s infinite;
 
@@ -78,7 +77,7 @@
     border-left: 6px solid black;
     border-bottom: 6px solid black;
 
-    animation: glowing-button-shadows 4s infinite;
+    animation: glowing-shadow2 4s infinite;
 
 }
 
@@ -86,6 +85,7 @@
 
     background-color: blue;
     color: white;
+    animation: glowing-shadow4 4s infinite;
 
 }
 
@@ -97,7 +97,7 @@
     border-left: 5.5px solid black;
     border-bottom: 5.5px solid black;
     
-    animation: glowing-button-shadows 4s infinite;
+    animation: glowing-shadow2 4s infinite;
     animation-delay: 0s;
 
 }
@@ -106,5 +106,6 @@
 
     background-color: rgb(47, 0, 255);
     color: white;
+    animation: glowing-shadow4 4s infinite;
     
 }

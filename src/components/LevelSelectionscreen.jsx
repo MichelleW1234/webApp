@@ -50,7 +50,7 @@ function LevelSelectionscreen (){
                 <div className = "LevelsWindowContainer">
 
                     <div className = "LevelsWindow"> 
-                        <h2 className = "glitchy">Level 2</h2> 
+                        <h2><span className="LevelGlitch">Level</span> 2</h2> 
                     </div>
                     <button
                     className={`LevelButton ${activeButton === 2 ? 'active' : ''}`}

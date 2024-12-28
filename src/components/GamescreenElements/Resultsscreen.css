@@ -13,13 +13,14 @@
 
 }
 
-.result {
+.resultsContainer {
 
     display:flex;
     flex-direction: column;
     align-items: center;
     margin-top: 150px;
     background-color: rgb(190, 55, 252);
+    background-color: rgb(174, 61, 255);
     color: rgb(0, 0, 0);
     padding: 40px;
     border-radius: 8px;
@@ -29,9 +30,25 @@
     border-top: 1.5px solid black;
     border-right: 1.5px solid black;
 
-    animation: glowing-button-shadows 4s infinite;
+    box-shadow: 0 0 30px 6px rgb(211, 157, 255);
 
 }
+
+.results{
+
+    color: white;
+    font-size: 30px;
+
+}
+
+.resultsglitch {
+
+    color: white;
+    font-size: 30px;
+    animation: sign-glitch 3s infinite;
+
+}
+
 
 .floatingButton {
 
@@ -41,7 +58,7 @@
     border-left: 4.5px solid black;
     border-bottom: 4.5px solid black;
 
-    animation: button-glitch 4s infinite, glowing-button-shadows 4s infinite;
+    animation: button-glitch 4s infinite, glowing-shadow1 4s infinite;
 
 }
 
@@ -49,5 +66,6 @@
 
     background-color: rgb(0, 0, 255);
     color: white;
+    animation: button-glitch 4s infinite, glowing-shadow4 4s infinite;
 
 }

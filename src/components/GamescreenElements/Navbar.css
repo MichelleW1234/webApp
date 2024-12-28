@@ -14,12 +14,11 @@
     display:flex;
     flex-direction: row;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
 
 }
 
 .navBarButton{
-
 
     font-size: 25px;
     background-color: rgb(255, 104, 240);
@@ -35,21 +34,21 @@
     
     background-color: #4d1fd4;
     color: white;
+    
 }
 
 
 .readMoveReferencesButton {
 
     font-size: 25px;
-    background-color: rgb(170, 42, 255);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 104, 240);
     padding: 10px;
     border-left: 5.5px solid black;
     border-bottom: 5.5px solid black;
     border-right: 2.5px solid black;
     border-top: 2.5px solid black;
 
-    animation: glowing-large-words-shadows 4s infinite, glowing-button-shadows 4s infinite;
+    animation: glowing-shadow3 4s infinite;
 
 }
 
@@ -57,5 +56,6 @@
 
     background-color: #4d1fd4;
     color: white;
+    animation: glowing-shadow4 4s infinite;
 
 }
