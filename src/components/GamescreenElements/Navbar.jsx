@@ -1,15 +1,24 @@
 import { useLevel } from '../../LevelProvider.jsx';
+import { useInput } from '../../InputProvider.jsx';
 import { useReference } from '../../ReferenceProvider.jsx';
-import { getReferences } from "../../Helpers/helpers.js";
+import { getReferences, getInput} from "../../Helpers/helpers.js";
 import "./Navbar.css";
 
 function Navbar ({showReferences, setShowReferences}){
 
     const { level, setLevel } = useLevel();
+    const { input, setInput } = useInput();
+    const { reference, setReference } = useReference();
 
     const resetLevels = () => {
 
         setLevel(1);
+
+        const defaultInput = getInput(1);
+        setInput(defaultInput);
+
+        const defaultReferences = getReferences(1);
+        setReference(defaultReferences);
 
     };
 
